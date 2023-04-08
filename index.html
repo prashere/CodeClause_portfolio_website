@@ -7,12 +7,13 @@
     <title>Prashidika Tiwari</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Archivo:ital@0;1&display=swap');
-
+        
         body{
             background-image: url(images/background.jpg);
             height:100vh;
             background-size: cover;
             opacity:0.9;
+            overflow-x: hidden;
         }
         .fill-square{
             position: absolute;
@@ -69,6 +70,11 @@
             margin-left: 15px;
             border-radius: 10px;
         }
+        .button-container{
+            position:relative; 
+            margin-top: 10vh; 
+            margin-left: 100vh;
+        }
         .button{
             background-color: #f1c6c4;
             padding:20px;
@@ -105,6 +111,204 @@
             margin-top:8px;
             margin-left:8px;
         }
+        /*first break-point*/
+        @media (max-width:576px){
+            .main-container{
+                flex-direction: column;
+                gap:50vh;
+            }
+            .fill-square{
+                height:60vh;
+                width:70%;
+                margin-top: 25px;
+                margin-left: 25px;
+                width:90%;
+                padding-top: 120px;
+                font-family: 'Archivo',sans-serif;
+                font-size: 30px;
+                letter-spacing:5px;
+                line-height:1.5;
+            }
+            .border-square{
+                height:60vh;
+                margin: 0px;
+                width:90%;
+            }
+            .main-container-right{
+                padding-top:0px;
+            }
+            .description{
+                width:40%;
+                height:10vh;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: 'Archivo',sans-serif;
+                font-size: 15px;
+                letter-spacing: 4px;
+                padding-top: 15px;
+            }
+            .border{
+                width:40%;
+                height:10vh;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .student-container,.artist-container,.developer-container{
+                margin-bottom: 120px;
+            }
+            .button-container{
+                margin-left:0px;
+                
+            }
+            .button,.button-outline{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .button{
+                padding:20px;
+            }
+            .button a{
+            font-family: "Archivo",sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            }
+            .button-outline{
+                width:91px;
+                height:52px;
+            }
+        }
+
+        /*second break-point*/
+        @media screen and (min-width: 576px) and (max-width: 768px) {
+            .main-container{
+                flex-direction: column;
+                gap:50vh;
+            }
+            .main-container-left{
+                margin-top: 40vh;
+            }
+            .fill-square{
+                height:70vh;
+                width:50%;
+                margin-top: 25px;
+                margin-left: 25px;
+                width:90%;
+                padding-top: 120px;
+                font-family: 'Archivo',sans-serif;
+                font-size: 30px;
+                letter-spacing:5px;
+                line-height:1.5;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .border-square{
+                height: 70vh;
+                margin: 0px;
+                width:90%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .main-container-right{
+                padding-top:0px;
+            }
+            .description{
+                width:30%;
+                height:12vh;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: 'Archivo',sans-serif;
+                font-size: 17px;
+                letter-spacing: 4px;
+                padding-top: 20px;
+            }
+            .border{
+                width:30%;
+                height:12vh;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .student-container,.artist-container,.developer-container{
+                margin-bottom: 120px;
+            }
+            .button-container{
+                margin-left:0px;
+                
+            }
+            .button,.button-outline{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .button{
+                padding:20px;
+            }
+            .button a{
+            font-family: "Archivo",sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            }
+            .button-outline{
+                width:91px;
+                height:52px;
+            } 
+        }
+
+        /*third break-point*/
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            .fill-square{
+                padding-top: 100px;
+                font-size: 30px;
+                letter-spacing: 8px;
+            }
+            .description{
+                padding-top: 15px;
+            }
+        }
+
+        /*fourth break-point*/
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+            .fill-square{
+                height:90vh;
+                padding-top: 150px;
+            }
+            .description{
+                padding-top:15px;
+                font-size: 18px;
+            }
+            .button a{
+                font-size: 18px;
+            }
+            .button-outline{
+            width:101px;
+            height:60px;
+            }
+        }
+        /*fifth breakpoint*/
+        @media screen and (min-width: 1200px) {
+            .fill-square{
+                padding-top: 180px;
+            }
+            .description{
+                padding-top:20px;
+                font-size: 18px;
+            }
+            .button a{
+                font-size: 18px;
+            }
+            .button-outline{
+            width:101px;
+            height:60px;
+            }
+        }
+        
+        
 
     </style>
 </head>
@@ -136,12 +340,12 @@
             </div>
         </div><!--main-container-right-->
     </div>
-    <div class="button-container" style="position:relative; margin-top: 10vh; margin-left: 100vh;">
+    <div class="button-container" >
         <div class="button">
             <a href="#">Explore</a>
         </div>
         <div class="button-outline"></div>
-    </div>
+    </div><!--button container-->
     
 </body>
 </html>
