@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prashidika Tiwari</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital@0;1&display=swap');
+
         body{
-            background-color:#f0ece2;
+            background-image: url(images/background.jpg);
             height:100vh;
+            background-size: cover;
+            opacity:0.9;
         }
         .fill-square{
             position: absolute;
@@ -19,11 +23,18 @@
             margin-top: 80px;
             margin-left: 80px;
             z-index:10;
+            text-align: center;
+            box-sizing:border-box;
+            padding-top: 250px;
+            font-family: 'Archivo',sans-serif;
+            font-size: 40px;
+            letter-spacing:15px;
+            line-height:2;
         }
         .border-square{
             position:absolute;
             height:70vh;
-            border:2px solid #602234;
+            border:6px solid #602234;
             width:60%;
             border-radius: 20px;
             margin:40px;
@@ -42,7 +53,13 @@
             margin-top: 30px;
             border-radius:10px;
             z-index: 10;
-        
+            box-sizing: border-box;
+            text-align: center;
+            padding-top: 30px;
+            color: #f1c6c4;
+            font-family: 'Archivo',sans-serif;
+            font-size: 15px;
+            letter-spacing: 2px;
         }
         .border{
             width:80%;
@@ -52,36 +69,78 @@
             margin-left: 15px;
             border-radius: 10px;
         }
+        .button{
+            background-color: #f1c6c4;
+            padding:20px;
+            z-index:10;
+            border-top:2px solid #602234;
+            border-left:2px solid #602234;
+            cursor:pointer;
+        }
+        .button a{
+            color:#602234;
+            text-decoration: none;
+            font-family: "Archivo",sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .button:hover{
+            background-color: #602234;
+            border-top:3px solid #f1c6c4;
+            border-left:3px solid #f1c6c4;
+        }
+        .button:hover a{
+            color:#f1c6c4;
+        }
+        .button, .button-outline{
+            position:absolute;
+            display:inline-block;
+            border-radius:30px;
+        }
+        .button-outline{
+            width:91px;
+            height:58px;
+            border:2px solid #602234;
+            margin-top:8px;
+            margin-left:8px;
+        }
 
     </style>
 </head>
 <body>
     <div class="main-container" style="display:flex;">
         <div class="main-container-left" style="flex:75%; position:relative;">
-            <div class="fill-square">hi</div>
-            <div class="border-square">hello</div>
+            <div class="fill-square">PRASHIDIKA <br> TIWARI</div>
+            <div class="border-square"></div>
         </div><!--main-container-left-->
 
         <div class="main-container-right" style="flex:25%; display:flex; padding-top: 200px; flex-direction: column;">
             <div class="student-container">
                 <div class="sub-container">
-                    <div class="description" style="position:absolute;">student</div>
+                    <div class="description" style="position:absolute;">Student</div>
                     <div class="border" style="position:absolute;"></div>
                 </div>
             </div>
             <div class="artist-container">
                 <div class="sub-container">
-                    <div class="description" style="position:absolute;">artist</div>
+                    <div class="description" style="position:absolute;">Artist</div>
                     <div class="border" style="position:absolute;"></div>
                 </div>
             </div>
             <div class="developer-container">
                 <div class="sub-container">
-                    <div class="description" style="position:absolute;">web-developer</div>
+                    <div class="description" style="position:absolute;">Web-developer</div>
                     <div class="border" style="position:absolute;"></div>
                 </div>
             </div>
         </div><!--main-container-right-->
+    </div>
+    <div class="button-container" style="position:relative; margin-top: 10vh; margin-left: 100vh;">
+        <div class="button">
+            <a href="#">Explore</a>
+        </div>
+        <div class="button-outline"></div>
     </div>
     
 </body>
