@@ -34,6 +34,12 @@
             font-size: 40px;
             letter-spacing:15px;
             line-height:2;
+            opacity: 0;
+            animation-name: appear;
+            animation-duration: 1s;
+            animation-delay: 0.5s; 
+            animation-fill-mode: forwards; 
+            animation-timing-function: ease-in-out;
         }
         .border-square{
             position:absolute;
@@ -64,6 +70,12 @@
             font-family: 'Archivo',sans-serif;
             font-size: 15px;
             letter-spacing: 2px;
+            opacity: 0;
+            animation-name: slide;
+            animation-duration: 1s;
+            animation-delay: 0.7s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards; 
         }
         .border{
             width:80%;
@@ -334,6 +346,23 @@
             height:60px;
             }
         }
+        @keyframes appear {/*for thing to appear on load*/
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+        }
+        @keyframes slide{/*for the things to slide upward on load*/
+        0% {
+          transform: translateY(20px); /* move 20px down */
+        }
+        100% {
+            opacity: 1;
+          transform: translateY(0); /* move back to original position */
+        }
+    }
         
         
 
