@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prashidika Tiwari">
+    <meta name="keywords" content="portfolio">
+    <meta name="description" content="project2 of CodeClause">
     <title>Prashidika Tiwari</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Archivo:ital@0;1&display=swap');
         
         body{
             background-image: url(images/background.jpg);
-            height:105vh;
+            height:110vh;
             background-size: cover;
             opacity:0.9;
             overflow-x: hidden;
@@ -73,7 +76,7 @@
         .button-container{
             position:relative; 
             margin-top: 20vh;
-            margin-bottom: 30px; 
+            margin-bottom: 50px; 
             
         }
         .button{
@@ -116,6 +119,7 @@
             margin-left:8px;
         }
         /*first break-point*/
+        /*for screen 576px and below*/
         @media (max-width:576px){
             .main-container{
                 flex-direction: column;
@@ -183,9 +187,13 @@
                 width:91px;
                 height:52px;
             }
+            .button-container{
+                margin-bottom: 50px;
+            }
         }
 
         /*second break-point*/
+        /*for the screen size between 576px and 768px*/
         @media screen and (min-width: 576px) and (max-width: 768px) {
             .main-container{
                 flex-direction: column;
@@ -262,9 +270,13 @@
                 width:91px;
                 height:52px;
             } 
+            .button-container{
+                margin-bottom: 50px;
+            }
         }
 
         /*third break-point*/
+        /*for the screen size between 768px and 992px*/
         @media screen and (min-width: 768px) and (max-width: 992px) {
             .fill-square{
                 height:60vh;
@@ -281,6 +293,7 @@
         }
 
         /*fourth break-point*/
+        /*for the screen size between 992px and 1200px*/
         @media screen and (min-width: 992px) and (max-width: 1200px) {
             .fill-square{
                 height:70vh;
@@ -300,8 +313,10 @@
             width:101px;
             height:60px;
             }
+            
         }
         /*fifth breakpoint*/
+        /*for the screen size 1200px and above*/
         @media screen and (min-width: 1200px) {
             .fill-square{
                 height:80vh;
@@ -351,7 +366,8 @@
                 </div>
             </div>
         </div><!--main-container-right-->
-    </div>
+    </div><!--main-container-->
+
     <div class="button-container" >
         <div class="button">
             <a href="#">Explore</a>
