@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashidika Tiwari</title>
+    <style>
+        body{
+            background-color:#f0ece2;
+            height:100vh;
+        }
+        .fill-square{
+            position: absolute;
+            height:80vh;
+            background:linear-gradient(#602234,#f1c6c4);
+            width:60%;
+            border-radius:20px;
+            margin-top: 80px;
+            margin-left: 80px;
+            z-index:10;
+        }
+        .border-square{
+            position:absolute;
+            height:70vh;
+            border:2px solid #602234;
+            width:60%;
+            border-radius: 20px;
+            margin:40px;
+        }
+        .sub-container{
+            position:relative;
+        }
+        .student-container,.artist-container,.developer-container{
+            flex:32%;
+            margin-bottom: 130px;
+        }
+        .description{
+            width:80%;
+            height:10vh;
+            background-color: #602234;
+            margin-top: 30px;
+            border-radius:10px;
+            z-index: 10;
+        
+        }
+        .border{
+            width:80%;
+            height:10vh;
+            border:2px solid #602234;
+            margin-top: 45px;
+            margin-left: 15px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container" style="display:flex;">
+        <div class="main-container-left" style="flex:75%; position:relative;">
+            <div class="fill-square">hi</div>
+            <div class="border-square">hello</div>
+        </div><!--main-container-left-->
+
+        <div class="main-container-right" style="flex:25%; display:flex; padding-top: 200px; flex-direction: column;">
+            <div class="student-container">
+                <div class="sub-container">
+                    <div class="description" style="position:absolute;">student</div>
+                    <div class="border" style="position:absolute;"></div>
+                </div>
+            </div>
+            <div class="artist-container">
+                <div class="sub-container">
+                    <div class="description" style="position:absolute;">artist</div>
+                    <div class="border" style="position:absolute;"></div>
+                </div>
+            </div>
+            <div class="developer-container">
+                <div class="sub-container">
+                    <div class="description" style="position:absolute;">web-developer</div>
+                    <div class="border" style="position:absolute;"></div>
+                </div>
+            </div>
+        </div><!--main-container-right-->
+    </div>
+    
+</body>
+</html>
