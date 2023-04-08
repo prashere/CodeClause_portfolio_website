@@ -10,7 +10,7 @@
         
         body{
             background-image: url(images/background.jpg);
-            height:100vh;
+            height:105vh;
             background-size: cover;
             opacity:0.9;
             overflow-x: hidden;
@@ -72,8 +72,9 @@
         }
         .button-container{
             position:relative; 
-            margin-top: 10vh; 
-            margin-left: 100vh;
+            margin-top: 20vh;
+            margin-bottom: 30px; 
+            
         }
         .button{
             background-color: #f1c6c4;
@@ -103,6 +104,9 @@
             position:absolute;
             display:inline-block;
             border-radius:30px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         .button-outline{
             width:91px;
@@ -263,9 +267,13 @@
         /*third break-point*/
         @media screen and (min-width: 768px) and (max-width: 992px) {
             .fill-square{
-                padding-top: 100px;
+                height:60vh;
+                padding-top: 80px;
                 font-size: 30px;
                 letter-spacing: 8px;
+            }
+            .border-square{
+                height:60vh;
             }
             .description{
                 padding-top: 15px;
@@ -275,8 +283,11 @@
         /*fourth break-point*/
         @media screen and (min-width: 992px) and (max-width: 1200px) {
             .fill-square{
-                height:90vh;
+                height:70vh;
                 padding-top: 150px;
+            }
+            .border-square{
+                height:70vh;
             }
             .description{
                 padding-top:15px;
@@ -293,6 +304,7 @@
         /*fifth breakpoint*/
         @media screen and (min-width: 1200px) {
             .fill-square{
+                height:80vh;
                 padding-top: 180px;
             }
             .description{
