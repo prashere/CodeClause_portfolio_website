@@ -162,6 +162,7 @@
             color:#602234;
             border:2px solid #602234;
             transition-delay: 0.1s;
+            cursor: pointer;
         }
         .get-in-touch{
             font-family:'Archivo',sans-serif;
@@ -237,12 +238,12 @@
         </div>
         <form style="margin-top:50px;">
             Name:<br>
-            <input type="text" name="name"><br>
+            <input type="text" name="name" id="sender-name"><br>
             Email:<br>
-            <input type="text" name="email" placeholder="example@gmail.com"><br>
+            <input type="text" name="email" id="sender-email" placeholder="example@gmail.com"><br>
             Message:<br>
-            <textarea rows="10" cols="52" placeholder="Write a message :)"></textarea><br>
-            <input type="button" name="submitButton" value="Submit" class="btn">
+            <textarea rows="10" id="sender-message" cols="52" placeholder="Write a message :)"></textarea><br>
+            <input type="button" name="submitButton" onclick="valid()" value="Submit" class="btn">
         </form>
     </div><!--form-container-->
 
@@ -268,6 +269,20 @@
             </li>
         </ul>
     </div>
+    <script>
+        //code for form validation
+        function valid(){
+            var name=document.getElementById("sender-name").value;
+            var email=document.getElementById("sender-email").value;
+            var message=document.getElementById("sender-message").value;
+            if(name=="" || email==""||message==""){
+                alert("Fields can't be left empty!");
+            }
+            else{
+                alert("Successful submission!");
+            }
+        }
+    </script>
     
 </body>
 </html>
