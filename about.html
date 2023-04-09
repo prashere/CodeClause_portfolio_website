@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prashidika Tiwari">
+    <meta name="keywords" content="portfolio">
+    <meta name="description" content="project2 of CodeClause">
+    <title>About</title>
+    <script src="https://kit.fontawesome.com/d3acb3ae7f.js" crossorigin="anonymous"></script>
+    <!--script for importing icons-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital@0;1&family=Open+Sans:wght@300&display=swap');
+        nav{
+            background-color: #f1c6c4;
+            overflow:auto;
+            position:fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+        nav ul {
+          list-style: none;
+          display: inline-block;
+          margin:0;
+          padding:0;
+          float:right;
+        }
+        .name{
+            float:left;
+            padding:30px;
+            font-family: 'Archivo', sans-serif;
+            letter-spacing:6px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        nav li {
+          display: inline-block;
+          margin-right: 10px;
+          padding: 30px;
+        }
+
+        nav a {
+          text-decoration: none;
+          font-family: 'Archivo', sans-serif;
+          color:#602234;
+          font-size: 18px;
+          letter-spacing: 2px;
+          padding-bottom: 30px;
+        }
+        .active{
+            border-bottom: 3px solid #602234;
+        }
+        nav li:hover a{
+            font-weight:700;
+        }
+        body{
+            background-color: #f0ece2;
+            overflow-x: hidden;
+            
+        }
+        .introduction{
+            display:flex;
+            margin-top:200px;
+            padding:50px;
+        }
+        .text,.photo{
+            padding: 50px;
+            flex:50%;
+        }
+        .text {
+            line-height: 2;
+            text-align: justify;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight:500;
+        }
+        .text span{
+            letter-spacing:3px;
+            color:#602234;
+            font-size:25px;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 500;
+        }
+        .line {
+            width: 300px;
+            height: 50px;
+            border: solid 5px #f1c6c4;
+            border-color: #f1c6c4 transparent transparent transparent;
+            border-radius: 30%/10px 10px 0 0;
+            position: absolute;
+             animation-name: flow;
+             animation-duration: 1s;
+             animation-timing-function: ease-out;
+             animation-fill-mode: forwards;
+             animation-delay: 1s;
+             
+        }
+        
+        @keyframes flow {
+          0% {
+            transform: translateX(-100%); /* move 100% left */
+          }
+          100% {
+            transform: translateX(0); /* move back to original position */
+            opacity:1;
+          }
+        }
+        .anim{
+            position: relative;
+            overflow: hidden;
+            width:500px;
+            height:50px;
+        }
+        .form-container{
+            background-color: #f1c6c4;
+            height:100vh;
+            position:relative;
+        }
+        form{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position:absolute;
+            font-size: 18px;
+            color:#602234;
+            letter-spacing: 2px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        input[type="text"] {
+            margin-bottom: 10px;
+            margin-top: 5px;
+            border:2px solid #f1c6c4;
+            height:40px;
+            width:400px;
+        }
+        input[type="text"]:focus{
+            color:#602234;
+            border:2px solid #602234;
+            
+        }
+        textarea{
+            border:2px solid #f1c6c4;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        .btn{
+            padding:10px;
+            color:#f1c6c4;
+            background-color: #602234;
+            border-radius:10px;
+            border-style: none;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .btn:hover{
+            background-color: #f1c6c4;
+            color:#602234;
+            border:2px solid #602234;
+            transition-delay: 0.1s;
+        }
+        .get-in-touch{
+            font-family:'Archivo',sans-serif;
+            font-size: 25px;
+            text-align: center;
+            padding-top: 50px;
+            color: #602234;
+            letter-spacing: 5px;
+        }
+        .socials{
+            display:flex;
+            padding:20px;
+            background-color: #602234;
+        }
+        .art-insta,.personal-insta,.linked-in{
+            flex:1;
+            padding: 50px;
+            float: right;
+        }
+        .icon{
+            font-size: 50px;
+            color:#f1c6c4;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="name">
+            PRASHIDIKA TIWARI
+        </div>
+        <ul>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section class="introduction">
+        <div class="text">
+            
+                Hey There!<br>
+                <span>
+                    I am Prashidika Tiwari
+                    <div style="margin-bottom: -40px;">
+                        <div class="anim">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </span><br>
+                I'm an enthusiastic and driven student pursuing a (BSc Hons) in Computing with Artificial Intelligence. In addition, I am
+                working to master web development, with a primary emphasis on the front end of the web then followed by the back end. I
+                continue to think about and investigate the elements of machine learning and IoT along with innovative implementation
+                and developing abilities through the exploration of various programming languages.
+                <br><br>
+                As I've been producing art for the previous six years, I also introduce myself as an artist. I paint and sketch
+                portraits on canvases using acrylic, watercolor, and gouache. I can paint anything, from various landscapes to capturing
+                various looks on people's faces. My involvement in many events and exhibitions has helped me develop my skills, and I'm
+                constantly working to improve them.
+            
+        </div>
+        <div class="photo"></div>
+    </section>
+    <div class="form-container">
+        <div class="get-in-touch">
+            Let's get in touch!
+        </div>
+        <form style="margin-top:50px;">
+            Name:<br>
+            <input type="text" name="name"><br>
+            Email:<br>
+            <input type="text" name="email" placeholder="example@gmail.com"><br>
+            Message:<br>
+            <textarea rows="10" cols="52" placeholder="Write a message :)"></textarea><br>
+            <input type="button" name="submitButton" value="Submit" class="btn">
+        </form>
+    </div>
+
+    <div class="socials">
+        <div class="art-insta">
+                <a href="#">
+                    <i class="fa-brands fa-instagram icon"></i>
+                </a>
+        </div>
+        <div class="personal-insta">
+            <a href="#">
+                <i class="fa-brands fa-instagram icon"></i>
+            </a>
+        </div>
+        <div class="linked-in">
+                <a href="#">
+                    <i class="fa-brands fa-linkedin icon"></i>
+                </a>
+        </div>
+    </div>
+    
+</body>
+</html>
