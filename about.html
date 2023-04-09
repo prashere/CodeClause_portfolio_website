@@ -77,6 +77,11 @@
             font-family: 'Open Sans', sans-serif;
             font-weight:500;
         }
+        .photo img{
+        width:80%; 
+        height:100%; 
+        border-radius:10px;
+        }
         .text span{
             letter-spacing:3px;
             color:#602234;
@@ -98,7 +103,6 @@
              animation-delay: 1s;
              
         }
-        
         @keyframes flow {
           0% {
             transform: translateX(-100%); /* move 100% left */
@@ -118,6 +122,7 @@
             background-color: #f1c6c4;
             height:100vh;
             position:relative;
+            width:100%;
         }
         form{
             top: 50%;
@@ -135,11 +140,6 @@
             border:2px solid #f1c6c4;
             height:40px;
             width:400px;
-        }
-        input[type="text"]:focus{
-            color:#602234;
-            border:2px solid #602234;
-            
         }
         textarea{
             border:2px solid #f1c6c4;
@@ -193,6 +193,171 @@
           color: #f1c6c4;
           font-family: 'Open Sans',sans-serif;
         }
+        @media(max-width:576px){
+            nav {
+              flex-direction: column;
+              align-items: center;
+            }
+        
+            nav ul {
+              flex-direction: column;
+              float: left;
+            }
+        
+            nav li {
+              margin: 10px 0;
+            }
+            .introduction{
+                flex-direction: column;
+                flex-wrap: wrap;
+                padding: 0;
+            }
+            .text{
+                padding:10px;
+                width: 90%;
+                font-size: 16px;
+            }
+            .photo img{
+                width:60%;
+                height:80%;
+            }
+            .text span{
+                font-size: 18px;
+            }
+            form{
+                font-size:15px;
+            }
+            .form-container{
+                width:100%;
+            }
+            input[type="text"]{
+                width:230px;
+                height:25px;
+            }
+            textarea{
+                width:230px;
+                height:50px;
+            }
+            .btn{
+                padding:8px;
+                font-size: 15px;
+            }
+            .icon{
+                font-size: 20px;
+            } 
+            .socials ul li{
+                font-size: 10px;
+            }
+        } 
+        /*second break-point*/
+        /*for the screen size between 576px and 768px*/
+        @media screen and (min-width: 576px) and (max-width: 768px) {
+            nav {
+              flex-direction: column;
+              align-items: center;
+            }
+        
+            nav ul {
+              flex-direction: column;
+              float: left;
+            }
+        
+            nav li {
+              margin: 10px 0;
+            }
+            .introduction{
+                flex-direction: column;
+                flex-wrap: wrap;
+                padding: 0;
+            }
+            .text{
+                padding:12px;
+                width: 90%;
+                font-size: 16px;
+            }
+            .photo img{
+                width:40%;
+                height:60%;
+            }
+            .text span{
+                font-size: 20px;
+            }
+            form{
+                font-size:15px;
+            }
+            .form-container{
+                width:100%;
+            }
+            input[type="text"]{
+                width:290px;
+                height:25px;
+            }
+            textarea{
+                width:290px;
+                height:60px;
+            }
+            .btn{
+                padding:8px;
+                font-size: 15px;
+            }
+            .icon{
+                font-size: 25px;
+            } 
+            .socials ul li{
+                font-size: 12px;
+            } 
+        }  
+        /*third break-point*/
+        /*for the screen size between 768px and 992px*/
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            .photo img{
+                width:40%;
+                height:60%;
+            }
+            .introduction{
+                flex-direction: column;
+                flex-wrap: wrap;
+                padding: 0;
+        } 
+    } 
+    /*fourth break-point*/
+        /*for the screen size between 992px and 1200px*/
+        @media screen and (min-width: 992px) and (max-width: 1100px) {
+            .text{
+                width:40%;
+            }
+            .photo img{
+                margin-top: 100px;
+                margin-left: 50px;
+                width:80%;
+                height:50%;
+            }
+        } 
+        @media screen and (min-width: 1100px) and (max-width: 1200px) {
+            .text{
+                width:40%;
+            }
+            .photo img{
+                margin-top: 100px;
+                margin-left: 50px;
+                width:70%;
+                height:60%;
+            }
+        } 
+
+        /*fifth breakpoint*/
+        /*for the screen size 1200px and above*/
+        @media screen and (min-width: 1200px) {
+            .text{
+                width:40%;
+            }
+            .photo img{
+                margin-top: 100px;
+                margin-left: 50px;
+                width:80%;
+                height:80%;
+            }
+        }  
     </style>
 </head>
 <body>
@@ -228,7 +393,7 @@
                 constantly working to improve them.
         </div><!--text-->
         <div class="photo">
-            <img src="images/profile.jpg" style="width:400px; height:80vh; border-radius:10px;">
+            <img src="images/profile.jpg" >
         </div><!--photo-->
     </section>
 
