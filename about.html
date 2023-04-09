@@ -172,20 +172,28 @@
             color: #602234;
             letter-spacing: 5px;
         }
-        .socials{
-            display:flex;
-            padding:20px;
-            background-color: #602234;
-        }
-        .art-insta,.personal-insta,.linked-in{
-            flex:1;
-            padding: 50px;
-            float: right;
-        }
         .icon{
-            font-size: 50px;
+            font-size: 30px;
             color:#f1c6c4;
         }
+        .socials{
+            background-color: #602234;
+            overflow: auto;
+        }
+        .socials ul {
+          list-style: none;
+          margin:0;
+          padding:0;
+          float:right;
+        }
+        .socials li {
+          display: inline-block;
+          margin-right: 10px;
+          padding: 30px;
+          color: #f1c6c4;
+          font-family: 'Open Sans',sans-serif;
+        }
+        
 
 
     </style>
@@ -224,7 +232,9 @@
                 constantly working to improve them.
             
         </div>
-        <div class="photo"></div>
+        <div class="photo">
+            <img src="images/profile.jpg" style="width:400px; height:80vh; border-radius:10px;">
+        </div>
     </section>
     <div class="form-container">
         <div class="get-in-touch">
@@ -242,21 +252,27 @@
     </div>
 
     <div class="socials">
-        <div class="art-insta">
+        <ul>
+            <li>
                 <a href="#">
                     <i class="fa-brands fa-instagram icon"></i>
-                </a>
-        </div>
-        <div class="personal-insta">
-            <a href="#">
-                <i class="fa-brands fa-instagram icon"></i>
-            </a>
-        </div>
-        <div class="linked-in">
+                </a><br>
+                art 
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-instagram icon"></i>
+                </a><br>
+                personal
+            </li>
+            <li>
                 <a href="#">
                     <i class="fa-brands fa-linkedin icon"></i>
-                </a>
-        </div>
+                </a><br>
+                personal
+            </li>
+
+        </ul>
     </div>
     
 </body>
